@@ -1,0 +1,102 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PostgreSQL VueJs Express NodeJs application",
+  "main": "main.js",
+  "dependencies": {
+    "apollo-boost": "^0.4.3",
+    "cookie-parser": "~1.4.4",
+    "core-js": "^2.6.5",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "express-webpack-assets": "^0.1.0",
+    "graphql": "^14.4.2",
+    "graphql-date": "^1.0.3",
+    "graphql-tag": "^2.10.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pg": "^7.12.0",
+    "pg-hstore": "^2.3.3",
+    "rimraf": "^2.6.3",
+    "sequelize": "^5.11.0",
+    "vue": "^2.6.10",
+    "vue-apollo": "^3.0.0-rc.2",
+    "vue-router": "^3.0.7",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "assets-webpack-plugin": "^3.9.10",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.27",
+    "css-loader": "^3.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^4.1.0",
+    "nodemon": "^1.19.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.38.0"
+  },
+  "scripts": {
+    "start": "npm run prod",
+    "dev": "babel-node ./server/bin/www",
+    "server:prod": "node ./dist/bin/www",
+    "clean": "rimraf dist",
+    "build-server": "babel ./src --out-dir dist",
+    "prod": "NODE_ENV=production && clean && build && server:prod",
+    "watch": "nodemon",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kponnima/myapp-vue-postgres.git"
+  },
+  "author": "Kushalappa Ponnimada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kponnima/myapp-vue-postgres/issues"
+  },
+  "homepage": "https://github.com/kponnima/myapp-vue-postgres#readme"
+}

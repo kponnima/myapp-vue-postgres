@@ -1,0 +1,16 @@
+{
+  "verbose": true,
+  "exec": "npm run dev",
+  "ignore": [
+    "dist/"
+  ],
+  "watch": [
+    "src/*",
+    "server/*",
+    "app.js"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js, html, css, json"
+}

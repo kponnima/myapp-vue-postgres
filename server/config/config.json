@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "kponnima86",
+    "password": "Kushal86",
+    "database": "myappdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "kponnima86",
+    "password": "Kushal86",
+    "database": "myappdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "kponnima86",
+    "password": "Kushal86",
+    "database": "myappdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
